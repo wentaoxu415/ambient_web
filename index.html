@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <style>
       * {
-        font-family: Arial, Helvetica, Liberation Sans, FreeSans, sans-serif;
+        font-family: Helvetica, "Liberation Sans", FreeSans, sans-serif;
       }
       section {
-        padding: 100px 0px;
+        padding: 30px 0px;
       }
       section h2 {
           font-weight: bolder;
@@ -21,27 +21,15 @@
           margin-bottom: 20px;
       }
       section p{
-        font-family: -apple-system,BlinkMacSystemFont, Open Sans,Helvetica Neue,sans-serif;
         font-size: 18px;
         text-rendering: optimizeLegibility;     
       }
-      .bg-gray{
-        background-color: #F4F6F6;
+      section hr {
+      	border-width: 2px;
       }
-      .pricing-card-title{
-        color: #8BC34A;
-        margin-bottom: 0;
-        font-size: 3em;
-      }
-      .pricing-card-unit {
-        color: #8BC34A;
-      }
-      .price-item{
-        margin: 8px 0;
-      }
-      .feature-title{
-        color: #FF5566;
-        font-weight: bold;
+      footer{
+      	background-color: #3D3D3D;
+      	color: white;
       }
       .background{
         background-image: url("static/imgs/background.png");
@@ -51,6 +39,10 @@
         height: 700px;
         border: 0px;
       }
+      .first-section{
+      	padding: 100px 0px;  	
+      	color: white;
+      }
       .navbar-color{
         background-color:#f45d66;
       }
@@ -59,16 +51,38 @@
         font-weight: bold;
         color: white;
       }
+      .navbar-brand:hover{
+      	color: white;
+      }
       .nav-link{
+      	font-weight: bolder;
         font-size: 16px;
-        color: white;
+        color: #EEEEEE;
+
       }
       .nav-link:hover{
-        color: black;
-      }
-      #landing{
         color: white;
       }
+      .pricing-card-title{
+        color: #00bf5e;
+        margin-bottom: 0;
+        font-size: 3em;
+      }
+      .pricing-card-unit {
+        color: #00bf5e;
+      }
+      .price-item{
+        margin: 8px 0;
+      }
+      .feature-title{
+        color: #FF5566;
+        font-weight: bold;
+      }
+      #contact-us{
+      	background-color: #f45d66;
+      	color: white;
+      }
+
       ul.nav a:hover { color: red !important; }
     </style>
   </head>
@@ -84,21 +98,23 @@
       </div>
       <div class="collapse navbar-collapse flex-grow-1 text-left navbar-item" id="myNavbar">
         <ul class="navbar-nav ml-auto flex-nowrap">
-          <li class="nav-item"><a href="#why-ambient" class="nav-link m-2 menu-item navbar-font">Why Ambient AI</a></li>
-          <li class="nav-item"><a href="#how-it-works" class="nav-link m-2 menu-item">How It Works</a></li>
-          <li class="nav-item"><a href="#features" class="nav-link m-2 menu-item">Features</a></li>
-          <li class="nav-item"><a href="#pricing" class="nav-link m-2 menu-item">Pricing</a></li>
+          <li class="nav-item"><a href="#why-ambient" class="nav-link m-2 navbar-font">Why Ambient AI</a></li>
+          <li class="nav-item"><a href="#how-it-works" class="nav-link m-2">How It Works</a></li>
+          <li class="nav-item"><a href="#features" class="nav-link m-2">Features</a></li>
+          <li class="nav-item"><a href="#pricing" class="nav-link m-2">Pricing</a></li>
+          <li class="nav-item"><a href="#contact-us" class="nav-link m-2">Contact Us</a></li>
         </ul>
       </div>
     </nav>
 
-    <section id='landing' class="background">
+   	<!-- Begin Landing section -->
+    <section id='landing' class="background first-section">
     <div class="container">
       <div class="row align-items-center text-center">
-        <div class="col-lg-6">
-          <h1>Digital Assistant for Doctors</h1>
-          <h5>Transform your voice into medical notes</h5>
-          <button type="button" class="btn btn-primary">Join the Waitlist</button>
+        <div class="col-lg-6 mb-3">
+          <h1 style="font-size:3.5vh;"><b>Digital Assistant for Doctors</b></h1>
+          <h5 style="font-size:2.5vh">Transform your voice into medical notes</h5>
+          <a id="contact-button" type="button" class="btn btn-primary mt-3" href="https://www.surveymonkey.com/r/FBQJVZD"><b>Request a Demo</b></a>
         </div>
         <div class="col">
           <img class="img-fluid" src='static/imgs/app_screenshot.png'></png>
@@ -111,11 +127,12 @@
         <div class='row'>
           <div class='col'>
             <h2>Why Ambient AI?</h2>
+            <hr width="50%">
           </div>
         </div>
         <div class='row justify-content-center'>
           <div class='col-md-8'>
-            <p>
+            <p class="text-left">
              In today's medicine, it seems like documentation comes before patients. According to a survey conducted by the 
              Annals of Medicine, doctors spend 49% of time on handling paperwork, nearly twice as much time as seeing 
              patients. We provide a mobile app that takes accurate medical notes based on voice so that practitioners can 
@@ -125,11 +142,14 @@
         </div>
       </div>
     </section>
-    <section id='how-it-works' class='text-center bg-gray'>
+
+    <!-- Begin How It Works section -->
+    <section id='how-it-works' class='text-center'>
       <div class='container'>
         <div class='row'>
           <div class='col'>
             <h2>How It Works</h2>
+            <hr width="50%">
           </div>
         </div>
         <div class='row'>
@@ -143,7 +163,7 @@
               <img src="static/imgs/doc1.jpg" class="img-fluid img-thumbnail">
             </div>
             <div class="col-md-5 offset-md-1 my-auto">
-              <h4><b>1. Dictate</b></h4>
+              <h5><b>1. Dictate</b></h5>
               <p>Dictate to the phone, tablet, or watch and have notes appear in your EMR instantly.</p>
             </div>
           </div>
@@ -154,7 +174,7 @@
               <img src="static/imgs/doc2.jpeg" class="img-fluid img-thumbnail">
             </div>
             <div class="col-md-5 offset-md-1 my-auto">
-              <h4><b>2. Review</b></h4>
+              <h5><b>2. Review</b></h5>
               <p>Review and edit your notes or submit to our specialized QA team for error checking.</p>
             </div>
           </div>
@@ -165,18 +185,21 @@
               <img src="static/imgs/doc3.jpeg" class="img-fluid img-thumbnail">
             </div>
             <div class="col-md-5 offset-md-1 my-auto">
-              <h4><b>3. Save</b></h4>
+              <h5><b>3. Save</b></h5>
               <p>Sign off to save the final edition of your note.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Begin Features Section--> 
     <section id='features' class="text-center">
       <div class='container mb-5'>
         <div class='row'>
           <div class='col'>
             <h2>Features</h2>
+            <hr width="50%">
           </div>
         </div>
         <div class='row'>
@@ -192,7 +215,7 @@
             <div class="card mb-4 box-shadow h-100">
               <div class="card-body">
                 <img src="static/icons/mobile.svg" width=50px;></img>
-                <h5 class="feature-title">Mobile-first</h5>
+                <h5 class="feature-title mt-3">Mobile-first</h5>
                 <p>Use a phone, tablet, or watch to dictate and review patient charts where you are.</p>
               </div>
             </div>
@@ -201,7 +224,7 @@
             <div class="card mb-4 box-shadow h-100">
               <div class="card-body">
                 <img src="static/icons/doctor.svg" width=50px;></img>
-                <h5 class="feature-title">Personalized</h5>
+                <h5 class="feature-title mt-3">Personalized</h5>
                 <p>Our speech models become personalized based on your voice to produce high accuracy transcription.</p>
               </div>
             </div>
@@ -210,7 +233,7 @@
             <div class="card mb-4 box-shadow h-100">
               <div class="card-body">
                 <img src="static/icons/shield.svg" width=50px;></img>
-                <h5 class="feature-title">Reliability</h5>
+                <h5 class="feature-title mt-3">Reliability</h5>
                 <p>Efficient human-in-loop QA systems ensure that your medical note is complete and correct. </p>
               </div>
             </div>
@@ -219,7 +242,7 @@
             <div class="card mb-4 box-shadow h-100">
               <div class="card-body">
                 <img src="static/icons/lightening.svg" width=50px;></img>
-                <h5 class="feature-title">Fast Integration</h5>
+                <h5 class="feature-title mt-3">Fast Integration</h5>
                 <p>Our robot process automation enables instant integrations with popular EMRs.</p>
               </div>
             </div>
@@ -227,11 +250,14 @@
         </div>
     </div>
     </section>
+
+    <!-- Begin Pricing section -->
     <section id='pricing' class='text-center mb-5'>
       <div class='container mb-5'>
         <div class='row'>
           <div class='col'>
             <h2>Pricing</h2>
+            <hr width="50%">
           </div>
         </div>
         <div class='row'>
@@ -250,7 +276,7 @@
                     </div>
                     <div class="card-body">
                       <h1 class="card-title pricing-card-title">$100</h1>
-                      <small class="pricing-card-unit">per user / month</small>
+                      <small class="pricing-card-unit"><b>per user / month</b></small>
                       <ul class="list-unstyled mt-3 mb-4">
                         <li class="border-bottom price-item">Unlimited transcription</li>
                         <li class="border-bottom price-item">Access to Human QA System</li>
@@ -267,7 +293,7 @@
                     </div>
                     <div class="card-body">
                       <h1 class="card-title pricing-card-title">Custom</h1>
-                      <small class="pricing-card-unit">We offer discounts to large teams</small>
+                      <small class="pricing-card-unit"><b>We offer discounts to large teams</b></small>
                       <ul class="list-unstyled mt-3 mb-4">
                         <li class="border-bottom price-item">Unlimited transcription</li>
                         <li class="border-bottom price-item">Access to Human QA System</li>
@@ -283,11 +309,13 @@
             </div>
           </div>
     </section>
+
+    <!-- Begin Contact Us section -->
     <section id="contact-us" class="text-center">
       <div class='container mb-5'>
         <div class='row'>
           <div class='col'>
-            <h2>Contact Us</h2>
+            <h2 style="color: white">Contact Us</h2>
           </div>
         </div>
         <div class='row'>
@@ -295,9 +323,9 @@
             <h5>Find out how Ambient AI can help you</h5>
           </div>
         </div>
-        <div class="row">
+        <div class="row mt-3">
           <div class="col">
-            <a id="contact-button" type="button" class="btn btn-primary" href="https://www.google.com">Message</a>
+            <a id="contact-button" type="button" class="btn btn-primary" href="https://www.surveymonkey.com/r/FBQJVZD"><b>Request a Demo</b></a>
           </div>
         </div>
       </div>
