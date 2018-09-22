@@ -51,13 +51,60 @@
         height: 700px;
         border: 0px;
       }
+      .navbar-color{
+        background-color:#f45d66;
+      }
+      .navbar-brand{
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+      }
+      .nav-link{
+        font-size: 16px;
+        color: white;
+      }
+      .nav-link:hover{
+        color: black;
+      }
+      #landing{
+        color: white;
+      }
+      ul.nav a:hover { color: red !important; }
     </style>
   </head>
-  <body>
-    <section id='landing' class="background">
-      <div class="container">
-
+  <body> 
+    <nav class="navbar navbar-expand-lg fixed-top navbar-color">
+      <div class="d-flex flex-grow-1">
+        <a class="navbar-brand d-lg-inline-block ml-3" href="#">Ambient AI</a>
+        <div class="w-100 text-right navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
       </div>
+      <div class="collapse navbar-collapse flex-grow-1 text-left navbar-item" id="myNavbar">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <li class="nav-item"><a href="#why-ambient" class="nav-link m-2 menu-item navbar-font">Why Ambient AI</a></li>
+          <li class="nav-item"><a href="#how-it-works" class="nav-link m-2 menu-item">How It Works</a></li>
+          <li class="nav-item"><a href="#features" class="nav-link m-2 menu-item">Features</a></li>
+          <li class="nav-item"><a href="#pricing" class="nav-link m-2 menu-item">Pricing</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id='landing' class="background">
+    <div class="container">
+      <div class="row align-items-center text-center">
+        <div class="col-lg-6">
+          <h1>Digital Assistant for Doctors</h1>
+          <h5>Transform your voice into medical notes</h5>
+          <button type="button" class="btn btn-primary">Join the Waitlist</button>
+        </div>
+        <div class="col">
+          <img class="img-fluid" src='static/imgs/app_screenshot.png'></png>
+        </div>
+      </div>
+    </div>
     </section>
     <section id='why-ambient' class='text-center' >
       <div class='container'>
@@ -141,7 +188,7 @@
 
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-sm-6 col-md-3 mt-2">
+          <div class="col-sm-6 col-lg-3 mt-2">
             <div class="card mb-4 box-shadow h-100">
               <div class="card-body">
                 <img src="static/icons/mobile.svg" width=50px;></img>
@@ -150,7 +197,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-3 mt-2">
+          <div class="col-sm-6 col-lg-3 mt-2">
             <div class="card mb-4 box-shadow h-100">
               <div class="card-body">
                 <img src="static/icons/doctor.svg" width=50px;></img>
@@ -159,7 +206,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-3 mt-2">
+          <div class="col-sm-6 col-lg-3 mt-2">
             <div class="card mb-4 box-shadow h-100">
               <div class="card-body">
                 <img src="static/icons/shield.svg" width=50px;></img>
@@ -168,7 +215,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-3 mt-2">
+          <div class="col-sm-6 col-lg-3 mt-2">
             <div class="card mb-4 box-shadow h-100">
               <div class="card-body">
                 <img src="static/icons/lightening.svg" width=50px;></img>
@@ -196,8 +243,8 @@
           <div class="card-deck mb-3 text-center">
             <div class="container">
               <div class="row justify-content-center">
-                <div class="col-sm-6 col-md-4">
-                  <div class="card mb-4 shadom-sm h-100 w-80">
+                <div class="col-sm-6 col-md-5">
+                  <div class="card mb-4 shadom-sm h-100">
                     <div class="card-header">
                       <h4 class="my-0 font-weight-normal">Individual</h4>
                     </div>
@@ -213,8 +260,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-6 col-md-4">
-                  <div class="card mb-4 shadom-sm h-100 w-80">
+                <div class="col-sm-6 col-md-5">
+                  <div class="card mb-4 shadom-sm h-100">
                     <div class="card-header">
                       <h4 class="my-0 font-weight-normal">Enterprise</h4>
                     </div>
@@ -236,7 +283,24 @@
             </div>
           </div>
     </section>
-    <section id="contact-us">
+    <section id="contact-us" class="text-center">
+      <div class='container mb-5'>
+        <div class='row'>
+          <div class='col'>
+            <h2>Contact Us</h2>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col'>
+            <h5>Find out how Ambient AI can help you</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <a id="contact-button" type="button" class="btn btn-primary" href="https://www.google.com">Message</a>
+          </div>
+        </div>
+      </div>
     </section>
     <footer>
       <div class="container text-center">
@@ -252,8 +316,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
   </body>
 
-
+ 
 
 </html>
